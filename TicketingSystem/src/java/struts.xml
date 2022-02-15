@@ -1,0 +1,15 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="welcome" class = "ots.test.actions.AdminAction" method = "assignTechnician">
+            <result name = "technician">/assignLevel.jsp</result>
+        </action>
+         <action name="savetech" class = "ots.test.actions.AdminAction" method = "saveMappng">
+            <result name = "Save">/assignLevel.jsp</result>
+        </action>
+    </package>
+</struts>
